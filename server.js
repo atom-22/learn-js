@@ -14,9 +14,10 @@ require('./utils');
 console.log(add(7,7));
 
 //---json moduls import
+// during require process parses the json module into js onbject
+// no need to write extecntion '.json'
 var data = require('./data.json'); 
-//during require process parses the json module into js onbject
-//no need to write extecntion '.json'
+
 console.log(data.lang);
 
 
