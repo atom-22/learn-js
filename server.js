@@ -16,7 +16,7 @@ var seroj = new User('Seroj');
 var Car = car.Car;
 seroj.car = new Car('Nissan');
 
-var me = new Person("Atom","Ulikhanyan");
+var me = new Person(data.name,data.surname,data.age);
 me.sayHello();
 
 console.log(JSON.stringify(seroj));
