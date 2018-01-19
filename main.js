@@ -1,3 +1,6 @@
+// fix unused variable `data`;
+// maybe the file name should be person.js
+
 var data = require('./data.json');
 
 function Person(name,surname){
