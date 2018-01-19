@@ -1,7 +1,7 @@
 //--js moduls]
 var User = require('./user').User;
 var car = require('./car.js');
-var Person = require('./main.js').Person;
+var Person = require('./person.js').Person;
 
 require('./func.js');
 
@@ -16,8 +16,8 @@ var seroj = new User('Seroj');
 var Car = car.Car;
 seroj.car = new Car('Nissan');
 
-var my = new Person("Atom","Ulikhanyan");
-my.sayHello();
+var me = new Person("Atom","Ulikhanyan");
+me.sayHello();
 
 console.log(JSON.stringify(seroj));
 
