@@ -3,7 +3,7 @@ var User = require('./user').User;
 var car = require('./car.js');
 var Person = require('./person.js').Person;
 
-require('./func.js');
+require('./globalFunctions.js');
 
 //---json moduls import
 // during require process parses the json module into js onbject
