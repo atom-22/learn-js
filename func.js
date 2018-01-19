@@ -1,11 +1,4 @@
 
-var main = require('./main.js');
-var data = require('./personData.json');
-
-var  p = new main.Person("Poghos","Poghosyan");
-
-console.log(p.sayHello());
-
 global.getMax = function(){
         var max = 0;
         for(var i = 0;i<=arguments.length;i++){
