@@ -1,4 +1,4 @@
-global.getMax = function(){
+global.logMax = function(){
         var max = 0;
         for(var i = 0;i<=arguments.length;i++){
             if(arguments[i]>max){
@@ -16,5 +16,5 @@ global.getMin = function(arr){
             min = arr[i];
         }
     }
-    console.log("The min value is "+ min);
+    return "The min value is " + min;
 }
