@@ -9,7 +9,7 @@
     console.log("The max value of array is "+max);
 }
 
-
+// the `getMin` functions should be return value, not logging!
 global.getMin = function(arr){
     var min = 0;
     for (var i = 0; i < arr.length; i++) {
