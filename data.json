@@ -1,5 +1,8 @@
 {
     "location" : "Yerevan!",
      "lang" : "hy",
-     "mainStreats" : ["Baghramgan", "Aleq-Manukyan"] 
+     "mainStreats" : ["Baghramgan", "Aleq-Manukyan"],
+     "name":"Atom",
+     "surname":"Ulikhanyan",
+     "age":"23"
 }
