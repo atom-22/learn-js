@@ -22,7 +22,7 @@ me.sayHello();
 console.log(JSON.stringify(seroj));
 
 var arr1 = [3,2,4,8,-10,56,2,45,8,6];
-logMax(12,15,2,48,5);
+getMax(12,15,2,48,5);
 getMin(arr1);
 
 //--global methods
