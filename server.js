@@ -16,6 +16,7 @@ var seroj = new User('Seroj');
 var Car = car.Car;
 seroj.car = new Car('Nissan');
 
+//fix use user data from json module!
 var my = new Person("Atom","Ulikhanyan");
 my.sayHello();
 
