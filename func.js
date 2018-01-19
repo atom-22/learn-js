@@ -1,5 +1,6 @@
 //fix please rename the file name, 
-// it could be for example functions.js, globalFunctions.js,global.getMax = function(){
+// it could be for example functions.js, globalFunctions.js
+global.getMax = function(){
         var max = 0;
         for(var i = 0;i<=arguments.length;i++){
             if(arguments[i]>max){
