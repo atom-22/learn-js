@@ -1,0 +1,28 @@
+
+var main = require('./main.js');
+var data = require('./personData.json');
+
+var  p = new main.Person("Poghos","Poghosyan");
+
+console.log(p.sayHello());
+
+global.getMax = function(){
+        var max = 0;
+        for(var i = 0;i<=arguments.length;i++){
+            if(arguments[i]>max){
+                max = arguments[i];
+            }   
+        }   
+    console.log("The max value of array is "+max);
+}
+
+
+global.getMin = function(arr){
+    var min = 0;
+    for (var i = 0; i < arr.length; i++) {
+        if(arr[i] < min){
+            min = arr[i];
+        }
+    }
+    console.log("The min value is "+ min);
+}
