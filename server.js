@@ -2,8 +2,9 @@
 var User = require('./user').User;
 var car = require('./car.js');
 var Person = require('./person');
-
 require('./globalFunctions.js');
+
+var _ = require('lodash');
 
 //---json moduls import
 // during require process parses the json module into js onbject
@@ -32,5 +33,4 @@ require('./utils');
 console.log(add(7,7));
 
 console.log(data.lang);
-
 

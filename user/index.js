@@ -7,4 +7,4 @@ User.prototype.sayName = function(){
     console.log('Hi, my name is ' + this.name + ' yahuuuu!!!');
 }
 
-exports.User  = User;
+exports.User  = User; 
