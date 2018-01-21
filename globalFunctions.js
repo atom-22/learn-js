@@ -1,6 +1,6 @@
 global.getMax = function(){
-        var max = 0;
-        for(var i = 0;i<=arguments.length;i++){
+        var max = arguments[0];
+        for(var i = 1; i<=arguments.length; i++){
             if(arguments[i]>max){
                 max = arguments[i];
             }   
@@ -10,8 +10,8 @@ global.getMax = function(){
 
 
 global.getMin = function(arr){
-    var min = 0;
-    for (var i = 0; i < arr.length; i++) {
+    var min =  arr[0];
+    for (var i = 1; i < arr.length; i++) {
         if(arr[i] < min){
             min = arr[i];
         }

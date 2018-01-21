@@ -1,7 +1,7 @@
-function Person(name,surname,age){
-    this.name = name,
-    this.surname = surname,
-    this.age = age
+function Person(name, surname, age){
+    this.name = name;
+    this.surname = surname;
+    this.age = age;
 }
 
 Person.prototype.sayHello = function(){
