@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/gnunua/learn-js#readme",
   "dependencies": {
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.4",
+    "moment": "git+https://github.com/moment/moment.git",
+    "underscore": "^1.8.3"
   }
 }
- 
