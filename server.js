@@ -1,7 +1,7 @@
 //--js moduls]
 var User = require('./user').User;
 var car = require('./car.js');
-var Person = require('./person.js').Person;
+var Person = require('./person');
 
 require('./globalFunctions.js');
 
