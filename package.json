@@ -1,7 +1,7 @@
 {
-  "name": "learn-js",
-  "version": "1.0.0",
-  "description": "",
+  "name": "learn.js",
+  "version": "0.0.1",
+  "description": "\"some description about tst.js module\"",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/gnunua/learn-js.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "\"\"",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/gnunua/learn-js/issues"
@@ -22,5 +22,6 @@
     "lodash": "^4.17.4",
     "moment": "git+https://github.com/moment/moment.git",
     "underscore": "^1.8.3"
-  }
+  },
+  "devDependencies": {}
 }
