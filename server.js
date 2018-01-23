@@ -6,6 +6,9 @@ require('./globalFunctions.js');
 
 var _ = require('lodash');
 
+var test = require('utility');
+
+
 //---json moduls import
 // during require process parses the json module into js onbject
 // no need to write extecntion '.json'
