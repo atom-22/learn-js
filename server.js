@@ -3,18 +3,13 @@ var User = require('./user').User;
 var car = require('./car.js');
 var Person = require('./person');
 require('./globalFunctions.js');
-
 var _ = require('lodash');
-
-
 var test = require('test_utility');
-
 var jon = new test("jon","doe");
-
 jon.sayGoodbye();
 
 
-//---json moduls import
+// ---json moduls import
 // during require process parses the json module into js onbject
 // no need to write extecntion '.json'
 var data = require('./data.json'); 
