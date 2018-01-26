@@ -5,11 +5,6 @@ var Person = require('./person');
 require('./globalFunctions.js');
 
 var _ = require('lodash');
-var test = require('test_utility');
-var jon = new test("jon","doe");
-jon.sayGoodbye();
-
-
 
 // ---json moduls import
 
