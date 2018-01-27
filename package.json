@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/gnunua/learn-js#readme",
   "dependencies": {
-    "aspar": "^0.0.3",
+    "aspar": "0.0.4",
     "lodash": "^4.17.4",
     "moment": "^2.20.1"
   },
