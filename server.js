@@ -10,6 +10,8 @@ var asp = require('aspar');
 var someone = new asp.SomePerson("Jon","Doe",21);
 someone.sayPersonalInfo();
 
+
+
 // ---json moduls import
 
 // during require process parses the json module into js onbject
