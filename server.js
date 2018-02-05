@@ -1,15 +1,18 @@
-//--js moduls]
+//--js moduls
 var User = require('./user').User;
 var car = require('./car.js');
 var Person = require('./person');
 require('./globalFunctions.js');
 
 var _ = require('lodash');
-var test = require('test_utility');
-var jon = new test("jon","doe");
-jon.sayGoodbye();
 
-
+var asp = require('aspar');
+var someone = new asp.somePerson("Jon","Doe",21);
+    someone.sayPersonalInfo();
+var arr1 = [3,2,4,8,-10,56,2,45,8,6];
+    asp.logEvenNumSquare(25);
+    asp.infoMax(arr1);
+    asp.infoMin(arr1);
 
 // ---json moduls import
 
@@ -18,17 +21,15 @@ jon.sayGoodbye();
 var data = require('./data.json'); 
 
 var atom = new User('Atom');
-atom.sayName();
+    atom.sayName();
 var seroj = new User('Seroj');
 var Car = car.Car;
-seroj.car = new Car('Nissan');
+    seroj.car = new Car('Nissan');
 
 var me = new Person(data.name,data.surname,data.age);
-me.sayHello();
+    me.sayHello();
 
 console.log(JSON.stringify(seroj));
-
-var arr1 = [3,2,4,8,-10,56,2,45,8,6];
 
 getMax(12,15,2,48,5);
 

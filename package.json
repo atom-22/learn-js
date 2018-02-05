@@ -19,13 +19,9 @@
   },
   "homepage": "https://github.com/gnunua/learn-js#readme",
   "dependencies": {
+    "aspar": "0.0.5",
     "lodash": "^4.17.4",
-    "moment": "^2.20.1",
-    "react": "^16.2.0",
-    "sass": "^1.0.0-beta.4",
-    "test_utility": "^0.0.4",
-    "underscore": "^1.8.3",
-    "webpack": "^3.10.0"
+    "moment": "^2.20.1"
   },
   "devDependencies": {}
 }
