@@ -3,6 +3,32 @@ const path = require('path');
 const express = require('express');
 const app = express();
 
+var students = [
+	{
+		id: 0,
+		name: "Jon"
+	},
+	{
+		id: 1,
+		name: "Ann"
+	},
+	{
+		id:2,
+		name:"Jane"
+	}
+]
+
+app.get('/students', function(req,res){
+	res.send(students);
+})
+
+app.get('/students/:id', function(req,res){
+	var student = students.find(function(student){
+		return student.id == Number(req.params.id);
+	});
+	res.send(student);
+})
+
 app.get('/', (req, res) => { 
     res.send('Hello World!') 
 });
@@ -20,4 +46,4 @@ app.get('/user', (req, res) => {
     res.send(`Hi ${username}`); 
 });
 
-app.listen(4000, () => console.log('Example app listening on port 4000!'))
+app.listen(3251, () => console.log('Example app listening on port 3251!'))
