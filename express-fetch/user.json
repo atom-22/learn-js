@@ -1,5 +1,8 @@
 {
     "name":"Poghos",
     "surname":"Poghosyan",
-    "age": 25
+    "age": 25,
+    "address" : {
+      "streat" : "Main Streat"
+    }
 }
