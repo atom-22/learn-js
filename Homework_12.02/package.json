@@ -1,0 +1,15 @@
+{
+  "name": "Homework_12.02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "Atom Ulikhanyan <atomulikhanyan@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^3.11.0"
+  }
+}
