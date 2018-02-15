@@ -1,34 +1,31 @@
-var arr = [53,45,7,-12,6,3];
+var pjson = require('../package.json');
+console.log(pjson.scripts);
 
-function copyArr(arr){
-	var copyArr = [];
+const array = [53,45,7,-12,6,3];
+
+function copyArray(arr){
+	let copyArr = [];
 	arr.map(function(x){
 		copyArr.push(x);
 	});
 	return copyArr;	
 }
+console.log(copyArray(array));
 
-console.log(copyArr(arr));
-
-
-function arrCopy(arr){
-	var copyArr = [];
+function arrayCopy(arr){
+	let copyArr = [];
 	arr.forEach(function(x){
 		copyArr.push(x);
 	});
 	return copyArr;	
 }
+console.log(arrayCopy(array));
 
-console.log(arrCopy(arr));
-
-
-
-var revArr = [1,2,3,5].reduce(function (a, b, index, array){
-	var inArr = [];
-	for(var i = index; i >= array[0]; --i){
-		inArr.push(array[i]);
+const reverseArray = [1,2,3,5].reduce(function (a, b, index, array){
+	let innerArray = [];
+	for(let i = index; i >= array[0]; --i){
+		innerArray.push(array[i]);
 	}
-  	return inArr;
+  	return innerArray;
 },0);
-
-console.log(revArr);
+console.log(reverseArray);
