@@ -1,3 +1,3 @@
-const sum = (a, b) => a+b;
+import sum from "./sum";
 
-alert(sum(7,8));
+console.log(sum(7,8))

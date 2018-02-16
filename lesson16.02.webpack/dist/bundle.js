@@ -65,11 +65,33 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-const sum = (a, b) => a+b;
+"use strict";
 
-alert(sum(7,8));
+
+var _sum = __webpack_require__(1);
+
+var _sum2 = _interopRequireDefault(_sum);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+alert((0, _sum2.default)(7, 8));
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var sum = function sum(a, b) {
+  return a + b;
+};
+exports.default = sum;
 
 /***/ })
 /******/ ]);
