@@ -15,7 +15,7 @@ const arrayDeepCopy = function(array){
 	}
 	return arr;
 }
-
+ 
 const copyArray = function(arr){
 	let copyArr = [];
 	arr.map(function(x){
