@@ -17,7 +17,19 @@ module.exports = {
                   fallback: "style-loader",
                   use: "css-loader"
                 })
-            } 
+            },
+            {
+                test: /\.(png|jpg|gif)$/,
+                use: [
+                  "image-webpack-loader",  
+                  {
+                    loader: 'url-loader',
+                    options: {
+                        limit: 4000
+                      }
+                  }
+                ]
+              } 
         ]
     },
 
@@ -27,6 +39,7 @@ module.exports = {
 
 	output: {
 		path: path.resolve(__dirname, "dist"),
-		filename: `bundle.js`
+        filename: `bundle.js`,
+        publicPath: "/"
 	}
 };
