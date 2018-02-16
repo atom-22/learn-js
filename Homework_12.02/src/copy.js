@@ -1,11 +1,9 @@
 
+// shallow copy
 const arrayCopy = function(arr){
 	let copyArr = [];
 	arr.forEach(function(x){
-		let i = 0;
-		i = x;
-		copyArr.push(i);
-		++i;
+		copyArr.push(x);
 	});
 	return copyArr;	
 }
@@ -26,6 +24,8 @@ const copyArray = function(arr){
 	return copyArr;	
 }
 
-exports.arrayCopy = arrayCopy;
-exports.arrayDeepCopy = arrayDeepCopy;
-exports.copyArray = copyArray;
+module.exports = {
+	arrayCopy,
+	arrayDeepCopy,
+	copyArray
+}

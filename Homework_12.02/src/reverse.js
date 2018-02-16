@@ -1,4 +1,5 @@
 
+//fix
 const reverseArray = function(arr){
 	const revArray = arr.reduce(function (a, b, index, array){
 	let innerArray = [];
