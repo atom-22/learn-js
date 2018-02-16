@@ -1,5 +1,5 @@
 const path = require("path");
-const appVersion = require('./package.json').version;
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
     entry: "./src/index.js",
@@ -13,10 +13,18 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                use: [ 'style-loader', 'css-loader' ]
-            }
+                use: ExtractTextPlugin.extract({
+                  fallback: "style-loader",
+                  use: "css-loader"
+                })
+            } 
         ]
     },
+
+    plugins : [
+        new ExtractTextPlugin("styles.css"),
+    ],
+
 	output: {
 		path: path.resolve(__dirname, "dist"),
 		filename: `bundle.js`
