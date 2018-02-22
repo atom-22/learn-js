@@ -1,3 +1,5 @@
+import "./test.css";
+
 const button = document.createElement("button");
 button.innerText = "Cleck Me!";
 

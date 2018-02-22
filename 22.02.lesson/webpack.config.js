@@ -36,7 +36,8 @@ module.exports = {
 
     plugins : [
         new HtmlWebpackPlugin({
-            title: 'Atom App'
+            title: 'Atom App',
+            hash: true
           }),
         new ExtractTextPlugin("styles.css"),
     ],
