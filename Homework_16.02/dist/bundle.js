@@ -86,8 +86,6 @@ pTag.innerText = json.name + " " + json.surname;
 document.body.appendChild(pTag);
 
 
-console.log(json.name);
-
 /***/ }),
 /* 1 */
 /***/ (function(module, exports) {
@@ -98,7 +96,7 @@ module.exports = {"name":"Jon","surname":"Doe","age":20,"address":{"street":"Riv
 /* 2 */
 /***/ (function(module, exports) {
 
-(function() { var head = document.querySelector("head"); var style = document.createElement("style"); style.innerText="* {  box-sizing: border-box; }body {  background-color: #666666;  color: white; }img {  width: 300px;  height: 200px; }p {  font-size: 25px;  font-weight: bold;  color: red; }";head.appendChild(style);})()
+(function() { var head = document.querySelector("head"); var style = document.createElement("style"); style.innerText="* {  box-sizing: border-box; }body {  background-color: #666666;  color: white; }img {  width: 300px;  height: 200px; }p {  font-size: 25px;  font-weight: bold;  color: magenta; }";head.appendChild(style);})()
 
 /***/ }),
 /* 3 */
