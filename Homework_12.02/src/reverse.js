@@ -1,10 +1,9 @@
 
-
-const reverseArray = function(arr,brr){
-	brr = arr.reduce(function(a,b){
+const arrayReverse = function(arr){
+	let reverseArr = arr.reduce(function(a,b){
 		return [b].concat(a); 
 	})
-	return brr;
+	return reverseArr;
 }
 
-exports.reverseArray = reverseArray;
+exports.arrayReverse = arrayReverse;
