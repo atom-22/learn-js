@@ -1,12 +1,12 @@
 
 const _ = require('lodash');
 
-const DeepCopy = function(o){
+const deepCopy = function(o){
    var output, v, key;
    output = Array.isArray(o) ? [] : {};
    for (key in o) {
        v = o[key];
-       output[key] = (typeof v === "object") ? DeepCopy(v) : v;
+       output[key] = (typeof v === "object") ? deepCopy(v) : v;
    }
    return output;
 }
@@ -22,7 +22,7 @@ const arrayCopy = function(array){
 const map_arrayCopy = function(arr){
 	let copyArr = [];
 	arr.map(function(x){
-		copyArr.push(x);
+		  copyArr.push(x);
 	});
 	return copyArr;	
 }
@@ -35,15 +35,16 @@ const lodash_arrayCopy = function(objects){
 const forEach_arrayCopy = function(arr){
 	let copyArr = [];
 	arr.forEach(function(x){
-		copyArr.push(x);
+		  copyArr.push(x);
 	});
 	return copyArr;	
 }
 
 module.exports = {
-	DeepCopy,
+	deepCopy,
 	arrayCopy,
 	map_arrayCopy,
 	lodash_arrayCopy,
 	forEach_arrayCopy
 } 
+
