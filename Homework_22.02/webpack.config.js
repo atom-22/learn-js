@@ -45,7 +45,7 @@ module.exports = {
 
     plugins : [
         new HtmlWebpackPlugin({
-            template: './src/index_template.html',
+            template: './src/index_template.ejs',
             title: ",asdkasjdkjsak",
             hash: true,
             inject: true,
