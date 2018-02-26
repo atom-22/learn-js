@@ -1,0 +1,30 @@
+body{
+	font-family: Arial;
+	color: green;
+	font-size: 20px;
+	font-weight: bold;
+	width: 35%;
+	margin: 0 auto;
+}
+
+div{
+	width: 100%;
+	color: lightblue;
+}
+
+img{
+	margin-top: 25px;
+	width: 350px;
+	height: 200px;
+	cursor: pointer;
+	border-bottom-right-radius: 20%;
+	border-top-left-radius: 20%;
+	border: 10px solid green;
+}
+
+#loremText{
+	text-align: justify;
+	font-size: 15px;
+	color: red;
+	font-style: italic;
+}
