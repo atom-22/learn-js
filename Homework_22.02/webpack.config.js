@@ -46,24 +46,24 @@ module.exports = {
     plugins : [
         new HtmlWebpackPlugin({
             template: './src/index_template.html',
-            title: "Webpack devServer Demo",
+            title: ",asdkasjdkjsak",
             hash: true,
             inject: true,
-            minify: {
-              collapseWhitespace: true,
-              removeComments: true,
-              removeRedundantAttributes: true,
-              removeScriptTypeAttributes: true,
-              removeStyleLinkTypeAttributes: true
+            options : {
+              test : 'test_1'
             }
-
           }),
         new ExtractTextPlugin("style.css"),
-        new UglifyJsPlugin({
-          test: /\.js($|\?)/i
-        }),
-        new WebpackCleanPlugin(['build'])
+        // new UglifyJsPlugin({
+        //   test: /\.js($|\?)/i
+        // }),
+        new WebpackCleanPlugin({
+          
+          path : './build'
+        })
     ],
+
+    devtool: "cheap-eval-source-map",
 
 	output: {
 		path: path.resolve(__dirname, "build"),

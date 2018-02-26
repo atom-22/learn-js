@@ -4,6 +4,8 @@ import imageSrc from '../assets/webpack-dev-server-730x410.jpg';
 const divCont = document.createElement('div');
 document.body.appendChild(divCont);	
 
+debugger;
+
 const inp = document.createElement('span');
 inp.innerText = "Hover over image";
 divCont.appendChild(inp);
