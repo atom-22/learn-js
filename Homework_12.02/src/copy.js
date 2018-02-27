@@ -1,12 +1,12 @@
 
 const _ = require('lodash');
 
-const deepCopy = function(o){
-   var output, v, key;
-   output = Array.isArray(o) ? [] : {};
-   for (key in o) {
-       v = o[key];
-       output[key] = (typeof v === "object") ? deepCopy(v) : v;
+const deepCopy = function(object){
+   let output, value, key;
+   output = Array.isArray(object) ? [] : {};
+   for (key in object) {
+       value = object[key];
+       output[key] = (typeof value === "object") ? deepCopy(value) : value;
    }
    return output;
 }
