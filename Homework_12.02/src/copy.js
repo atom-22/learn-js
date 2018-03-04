@@ -22,7 +22,20 @@ const arrayCopy = function(array){
 const map_arrayCopy = function(arr){
 	let copyArr = [];
 	arr.map(function(x){
-		copyArr.push(x);
+		  copyArr.push(x);
+	});
+	return copyArr;	
+}
+
+const lodash_arrayCopy = function(objects){
+	let deep = _.cloneDeep(objects);
+	return deep;
+}
+
+const forEach_arrayCopy = function(arr){
+	let copyArr = [];
+	arr.forEach(function(x){
+		  copyArr.push(x);
 	});
 	return copyArr;	
 }
@@ -47,5 +60,4 @@ module.exports = {
 	lodash_arrayCopy,
 	forEach_arrayCopy
 } 
-
 
