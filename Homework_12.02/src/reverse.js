@@ -4,5 +4,6 @@ const arrayReverse = function(arr){
 		return [b].concat(a); 
 	})
 	return reverseArr;
+}
 
 exports.arrayReverse = arrayReverse;
