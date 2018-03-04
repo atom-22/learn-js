@@ -1,15 +1,8 @@
 
-//fix
-const reverseArray = function(arr){
-	const revArray = arr.reduce(function (a, b, index, array){
-	let innerArray = [];
-	for(let i = index; i >= array[0]; --i){
-		innerArray.push(array[i]);
-	}
-  	return innerArray;
-	},0);
-	console.log(revArray);
-}
+const arrayReverse = function(arr){
+	let reverseArr = arr.reduce(function(a,b){
+		return [b].concat(a); 
+	})
+	return reverseArr;
 
-
-exports.reverseArray = reverseArray;
+exports.arrayReverse = arrayReverse;
